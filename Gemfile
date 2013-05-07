@@ -15,6 +15,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :test do
+  gem 'vcr'
+  gem 'fakeweb'
+end
+
 
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

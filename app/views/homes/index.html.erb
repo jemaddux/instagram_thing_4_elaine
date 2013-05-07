@@ -4,6 +4,6 @@
 </form>
 <span id="placehoder">
 
-<%= if @photo_url %>
-  <img src="#{@photo_url}">
+<% if @photo %>
+  <img src="#{@photo.url}">
 <% end %>

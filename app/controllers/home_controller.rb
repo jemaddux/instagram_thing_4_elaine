@@ -1,11 +1,13 @@
-class HomeController < ApplicationController
+class HomesController < ApplicationController
+
   def index
     render :index
   end
 
   def show
-    #take params in username
-    #call Photogetter and recieve url of first photo
-    #render :index and pass along the url to erb
+    username = params[:username]
+    @photo = PhotoService.get_recent_photo(username)
+    render :index
   end
+
 end

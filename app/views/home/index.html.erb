@@ -1,0 +1,9 @@
+<form method="GET" path="/show">
+  <input name="username">
+  <button name="go" value="go">
+</form>
+<span id="placehoder">
+
+<%= if @photo_url %>
+  <img src="#{@photo_url}">
+<% end %>
